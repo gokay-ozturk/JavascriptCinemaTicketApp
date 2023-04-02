@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    margin: 0px;
+}
+.seat {
+    background-color: #444451;
+    height: 19px;
+    width: 15px;
+    margin: 5px;
+    border-radius: 15%;
+    height: 50px;
+}
+
+.seat.selected {
+    background-color: #f6eb6f;
+}
+.seat.reserved {
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 50px;
+}
+
+.seat:nth-last-of-type(3) {
+    margin-right: 50px;
+}
+
+.screen {
+    height: 100px;
+    margin: 0px;
+    box-shadow: 0px 3px 10px #b1b1c0 !important;
+}
+.info .col {
+    width: 75px;
+}
+.card-text span {
+    color: #f6eb6f;
+    font-size: 25px;
+}
+
+.container .seat:not(.reserved):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
